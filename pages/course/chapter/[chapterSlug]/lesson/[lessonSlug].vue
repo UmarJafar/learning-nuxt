@@ -1,6 +1,7 @@
 <script setup>
 import { useLocalStorage } from '@vueuse/core'
 
+
 const course = useCourse();
 const route = useRoute();
 
