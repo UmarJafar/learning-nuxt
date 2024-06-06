@@ -29,12 +29,7 @@ const {chapters} =  useCourse()
             :key="lesson.slug"
             class="flex flex-row space-x-1 no-underline prose-sm font-normal py-1 px-4 -mx-4"
             :to="lesson.path"
-            :class="{
-              'text-blue-500':
-                lesson.path === $route.fullPath,
-              'text-gray-600':
-                lesson.path !== $route.fullPath,
-            }"
+            :class="lesson.path === $route.fullPath ? 'text-blue-500' : 'text-gray-600'"
         >
             <span class="text-gray-500"
             >{{ index + 1 }}.</span
